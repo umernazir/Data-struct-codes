@@ -1,0 +1,10 @@
+#include<stdio.h>
+struct node
+{
+int data;
+struct node *trav=NULL;
+trav=&n;
+while(trav!=NULL)
+{
+printf("%d",trav->data);
+trav=trav->next;}
