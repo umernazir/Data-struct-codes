@@ -1,0 +1,44 @@
+struct node
+{
+int data;
+struct node *next;};
+struct node *Front=NULL,*Rear=NULL;
+int main()
+{
+int  ch;
+while(1)
+{printf("1for enque\n2fordeque\n3 for view");
+scanf("%d",&ch);
+item=deque;
+printf("deque");
+if(ch==1)enque();
+else if(ch==2)deque();
+else if(ch==3)view();
+else  break;
+}
+void enque()
+{
+temp=(struct node*)malloc (sizeof(struct node));
+printf("enter element");
+scanf("%d",&temp->data);
+temp->next=NULL;
+if(temp==NULL)
+printf("overflow");
+else
+{if(rear=temp;
+front=temp;}
+else{
+rear->next=temp;
+rear=temp;
+}}
+int deque()
+{
+if(front==NULL)
+printf("underflow");
+else
+{
+item=front->data;
+temp=front;
+front=front->next;
+free(front);
+return item;}
