@@ -1,0 +1,14 @@
+void dele(void)
+{
+int num; NODE  *P;
+if(start==NULL)
+{
+return ;
+}
+else
+{ P=start;
+start=start->next;
+printf("element deleted is=%d",P->num);
+free(p);
+}
+}
