@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct node
+{       int num;
+  struct  node*next;
+  struct   node*prev;}
+  *head=NULL,*tail=NULL;
+  trav=head;
+  while(trav!=NULL)
+  {
+  temp=trav->prev;
+  trav->prev=trav->next;
+  trav->next=temp;
+  trav=trav->prev;
+  }
