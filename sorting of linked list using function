@@ -1,0 +1,19 @@
+void sort()
+{
+int item;
+trav1=head;
+while(trav1->next!=NULL)
+{
+trav2=trav1->next;
+while(trav2!=Null)
+{
+if(trav1->data>trav2->data)
+{
+temp=trav1->data;
+trav1->data=trav2->data;
+trav2->data=temp;
+}
+trav2=trav2->next;
+trav1=trav1->next;
+}
+}
