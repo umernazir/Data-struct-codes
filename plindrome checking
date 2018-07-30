@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+char   flag,str[20];
+int   i,j;
+printf("enter string");
+gets(str);
+flag='y';
+printf("\nthe entered string");
+for(i=0;str[i]!='\0';i++)
+printf("%c",str[i]);
+for(j=0;i-=1;i>j;j++,i--)
+{
+if(str[i]!=str[j])
+{
+flag='n';
+break ;}
+}
+if(flag=='n')
+printf("is not a palindrome");
+else
+printf("string is palindrome");
+getch();}
